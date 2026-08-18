@@ -1,0 +1,113 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Casa Security",
+        "description": "Set up Casa Security. You will define security levels and their cameras afterwards from the integration's options.",
+        "data": {
+          "base_path": "Base path for snapshots and videos"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Casa Security is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Casa Security",
+        "menu_options": {
+          "global_settings": "Global settings",
+          "add_level": "Add security level",
+          "edit_level": "Edit security level",
+          "remove_level": "Remove security level",
+          "finish": "Save and exit"
+        }
+      },
+      "global_settings": {
+        "title": "Global settings",
+        "data": {
+          "base_path": "Base path for snapshots and videos"
+        }
+      },
+      "add_level": {
+        "title": "New security level",
+        "data": {
+          "name": "Level name",
+          "label_id": "Label",
+          "icon_on": "Icon (active)",
+          "icon_off": "Icon (inactive)",
+          "depends_on": "Depends on level"
+        }
+      },
+      "edit_level": {
+        "title": "Select level to edit",
+        "data": {
+          "id": "Level"
+        }
+      },
+      "edit_level_form": {
+        "title": "Edit security level",
+        "data": {
+          "name": "Level name",
+          "label_id": "Label",
+          "icon_on": "Icon (active)",
+          "icon_off": "Icon (inactive)",
+          "depends_on": "Depends on level"
+        }
+      },
+      "remove_level": {
+        "title": "Remove security level",
+        "data": {
+          "id": "Level"
+        }
+      },
+      "camera_menu": {
+        "title": "Cameras for this level",
+        "menu_options": {
+          "add_camera": "Add camera",
+          "edit_camera": "Edit camera",
+          "remove_camera": "Remove camera",
+          "save_level": "Save level and go back"
+        }
+      },
+      "add_camera": {
+        "title": "New camera",
+        "data": {
+          "trigger_entity": "Motion/presence sensor",
+          "camera_entity": "Camera",
+          "camera_name": "Camera name",
+          "video_duration": "Video duration (seconds)",
+          "video_lookback": "Video lookback (seconds)"
+        }
+      },
+      "edit_camera": {
+        "title": "Select camera to edit",
+        "data": {
+          "id": "Camera"
+        }
+      },
+      "edit_camera_form": {
+        "title": "Edit camera",
+        "data": {
+          "trigger_entity": "Motion/presence sensor",
+          "camera_entity": "Camera",
+          "camera_name": "Camera name",
+          "video_duration": "Video duration (seconds)",
+          "video_lookback": "Video lookback (seconds)"
+        }
+      },
+      "remove_camera": {
+        "title": "Remove camera",
+        "data": {
+          "id": "Camera"
+        }
+      }
+    },
+    "abort": {
+      "no_levels": "No security levels configured yet.",
+      "no_cameras": "No cameras configured for this level yet."
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Casa Security",
+        "description": "Configura Casa Security. I livelli di sicurezza e le relative telecamere si definiscono in seguito dalle opzioni dell'integrazione.",
+        "data": {
+          "base_path": "Percorso base per snapshot e video"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Casa Security è già configurata."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Casa Security",
+        "menu_options": {
+          "global_settings": "Impostazioni globali",
+          "add_level": "Aggiungi livello di sicurezza",
+          "edit_level": "Modifica livello di sicurezza",
+          "remove_level": "Rimuovi livello di sicurezza",
+          "finish": "Salva ed esci"
+        }
+      },
+      "global_settings": {
+        "title": "Impostazioni globali",
+        "data": {
+          "base_path": "Percorso base per snapshot e video"
+        }
+      },
+      "add_level": {
+        "title": "Nuovo livello di sicurezza",
+        "data": {
+          "name": "Nome livello",
+          "label_id": "Label",
+          "icon_on": "Icona (attivo)",
+          "icon_off": "Icona (non attivo)",
+          "depends_on": "Dipende dal livello"
+        }
+      },
+      "edit_level": {
+        "title": "Seleziona il livello da modificare",
+        "data": {
+          "id": "Livello"
+        }
+      },
+      "edit_level_form": {
+        "title": "Modifica livello di sicurezza",
+        "data": {
+          "name": "Nome livello",
+          "label_id": "Label",
+          "icon_on": "Icona (attivo)",
+          "icon_off": "Icona (non attivo)",
+          "depends_on": "Dipende dal livello"
+        }
+      },
+      "remove_level": {
+        "title": "Rimuovi livello di sicurezza",
+        "data": {
+          "id": "Livello"
+        }
+      },
+      "camera_menu": {
+        "title": "Telecamere di questo livello",
+        "menu_options": {
+          "add_camera": "Aggiungi telecamera",
+          "edit_camera": "Modifica telecamera",
+          "remove_camera": "Rimuovi telecamera",
+          "save_level": "Salva livello e torna indietro"
+        }
+      },
+      "add_camera": {
+        "title": "Nuova telecamera",
+        "data": {
+          "trigger_entity": "Sensore di movimento/presenza",
+          "camera_entity": "Telecamera",
+          "camera_name": "Nome della telecamera",
+          "video_duration": "Durata video (secondi)",
+          "video_lookback": "Lookback video (secondi)"
+        }
+      },
+      "edit_camera": {
+        "title": "Seleziona la telecamera da modificare",
+        "data": {
+          "id": "Telecamera"
+        }
+      },
+      "edit_camera_form": {
+        "title": "Modifica telecamera",
+        "data": {
+          "trigger_entity": "Sensore di movimento/presenza",
+          "camera_entity": "Telecamera",
+          "camera_name": "Nome della telecamera",
+          "video_duration": "Durata video (secondi)",
+          "video_lookback": "Lookback video (secondi)"
+        }
+      },
+      "remove_camera": {
+        "title": "Rimuovi telecamera",
+        "data": {
+          "id": "Telecamera"
+        }
+      }
+    },
+    "abort": {
+      "no_levels": "Nessun livello di sicurezza configurato al momento.",
+      "no_cameras": "Nessuna telecamera configurata per questo livello al momento."
+    }
+  }
+}
