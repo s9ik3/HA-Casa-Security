@@ -6,6 +6,6 @@ attivazione/disattivazione, sensori di stato e una dashboard dedicata,
 tutto generato e mantenuto automaticamente al variare della tua
 configurazione.
 
-**Nessun YAML manuale richiesto.**
+**Nessun YAML manuale richiesto.** 
 
 Consulta il [README](README.md) per l'installazione e la configurazione.
